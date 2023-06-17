@@ -14,3 +14,4 @@ Credit to:
   Moughamir, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
 
+You can try the app on Streamlit Community Cloud at https://voicegptdemo.streamlit.app/
