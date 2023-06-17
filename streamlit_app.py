@@ -10,7 +10,12 @@ import base64
 
 import openai
 
-openai.api_key = st.secrets["openai_api_key"]
+
+if st.secrets.has_key("openai_api_key"):
+    openai.api_key = st.secrets["openai_api_key"]
+else:
+    openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password')
+
 
 # This app is from https://levelup.gitconnected.com/i-created-a-voice-chatbot-powered-by-chatgpt-api-here-is-how-6302d555b949
 # with some minor changes by me.
